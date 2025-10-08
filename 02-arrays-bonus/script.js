@@ -40,7 +40,7 @@ for (let i = 0; i < teachers.length; i++) {
   }
 }
 console.log(provisorialTeachers)
-teachers.length = 0 
+teachers.length = 0
 for (let i = 0; i < provisorialTeachers.length; i++) {
   teachers.push(provisorialTeachers[i])
 }
@@ -51,6 +51,14 @@ console.log(teachers)
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
+let isFabioPresent = false
+
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] == "Fabio") {
+    isFabioPresent = true
+  }
+}
+console.log(isFabioPresent)
 // const isFabioPresent = teachers.includes("Fabio")
 // console.log(isFabioPresent)
 

@@ -21,14 +21,26 @@ for (i = 0; i < teachers.length; i++) {
   if (i === 4) {
     teachers[i] = "Patrick"
   }
-console.log(teachers[i])
+  console.log(teachers[i])
 }
 // teachers.splice(4,1,"Patrick")
 // console.log(teachers)
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 
+let lastTeacher = "";
 
+for (let i = 0; i < teachers.length; i++) {
+  if (i === teachers.length - 1) {
+    lastTeacher = teachers[i];
+  }
+}
+if (lastTeacher = "Luca") {
+  teachers.length = teachers.length - 1;
+}
+
+console.log(teachers);
+console.log(lastTeacher);
 
 
 // const lastTeacher = teachers.pop();

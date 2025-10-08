@@ -23,8 +23,7 @@ console.log(longNames)
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
-console.log(teachers)
-console.log(teachers.splice(5,1))
+teachers.splice(5,1)
 console.log(teachers)
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
@@ -34,4 +33,6 @@ const isFabioPresent = teachers.includes("Fabio")
 console.log(isFabioPresent)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+
+const teachersString = teachers.toString()
+console.log(teachersString);
